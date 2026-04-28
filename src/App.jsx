@@ -9,7 +9,7 @@ const initialSalespeople = [
     long: "4 years 1 month",
     target: 720000,
     actual: 3352875.37,
-    image: "images\SNGUON Chanthy.jpg",
+    image: "/images/SNGUON Chanthy.jpg",
   },
   {
     id: 2,
@@ -19,7 +19,7 @@ const initialSalespeople = [
     long: "1 Years 5 Months",
     target: 40000,
     actual: 2409473.97,
-    image: "images\CHEAV Mengheng.jpg",
+    image: "/images/CHEAV Mengheng.jpg",
   },
   {
     id: 3,
@@ -29,7 +29,7 @@ const initialSalespeople = [
     long: "1 year 5 months",
     target: 320000,
     actual: 2154911.47,
-    image: "images\HENG Leakena.jpg",
+    image: "/images/HENG Leakhena.jpg",
   },
   {
     id: 4,
@@ -39,7 +39,7 @@ const initialSalespeople = [
     long: "4 Years 1 Months",
     target: 960000,
     actual: 2105000,
-    image: "images\SOK Chet.jpg",
+    image: "/images/SOK Chet.jpg",
   },
   {
     id: 5,
@@ -49,7 +49,7 @@ const initialSalespeople = [
     long: "1 year",
     target: 320000,
     actual: 2049297.28,
-    image: "images\MOR Sophaktra.jpg",
+    image: "/images/MOR Sophaktra.jpg",
     
   },
   {
@@ -60,7 +60,7 @@ const initialSalespeople = [
     long: "1 year",
     target: 280000,
     actual: 1303909.75,
-    image: "images\THAVY Socheata.jpg",
+    image: "/images/THAVY Socheata.jpg",
     
   },
   {
@@ -71,7 +71,7 @@ const initialSalespeople = [
     long: "1 year 9 months",
     target: 320000,
     actual: 1214871.83,
-    image: "images\SOL Shearm.jpg",
+    image: "/images/SOL Shearm.jpg",
     
   },
   {
@@ -82,7 +82,7 @@ const initialSalespeople = [
     long: "1 year 6 months",
     target: 320000,
     actual: 1205927.8,
-    image: "images\MOM Leakena.jpg",
+    image: "/images/MOM Leakhena.jpg",
     
   },
   {
@@ -93,7 +93,7 @@ const initialSalespeople = [
     long: "1 year 10 months",
     target: 320000,
     actual: 1192125,
-    image: "images\KEO Sambat Thida.jpg",
+    image: "/images/KEO Sambat Thida.jpg",
     
   },
   {
@@ -104,7 +104,7 @@ const initialSalespeople = [
     long: "1 year 9 months",
     target: 320000,
     actual: 1079490,
-    image: "images\KET Kakada.jpg",
+    image: "/images/KET Kakada.jpg",
     
   },
 ];
