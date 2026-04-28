@@ -17,7 +17,7 @@ const initialSalespeople = [
     branch: "Baktuk Branch",
     role: "Relationship Officer",
     long: "1 Years 5 Months",
-    target: 40000,
+    target: 320000,
     actual: 2409473.97,
     image: "/images/CHEAV Mengheng.jpg",
   },
