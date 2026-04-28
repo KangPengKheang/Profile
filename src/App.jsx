@@ -76,13 +76,13 @@ const initialSalespeople = [
   },
   {
     id: 8,
-    name: "MOM Leakena",
+    name: "MOM Leakhena",
     branch: "Mao Tse Tong Branch",
     role: "Relationship Officer",
     long: "1 year 6 months",
     target: 320000,
     actual: 1205927.8,
-    image: "/images/MOM Leakhena.jpg",
+    image: "/images/MOM Leakena.jpg",
     
   },
   {
