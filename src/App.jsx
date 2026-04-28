@@ -3,83 +3,109 @@ import React, { useMemo, useState } from "react";
 const initialSalespeople = [
   {
     id: 1,
-    name: "PAO Chanthin",
-    branch: "Phnom Penh Branch",
-    role: "Senior Sales Executive",
-    long: "3 years",
-    target: 100000,
-    actual: 126500,
-    image: "/images/Chantin.jpg",
+    name: "SNGUON Chanthy",
+    branch: "Battambang Branch",
+    role: "Relationship Manager",
+    long: "4 years 1 month",
+    target: 720000,
+    actual: 3352875.37,
+    image: "images\SNGUON Chanthy.jpg",
   },
   {
     id: 2,
-    name: "KANG Pengkheang",
-    branch: "Siem Reap Branch",
-    role: "Sales Executive",
-    long: "3 years",
-    target: 100000,
-    actual: 92300,
-    image: "/images/Kheang.jpg",
+    name: "CHEAV Mengheng",
+    branch: "Baktuk Branch",
+    role: "Relationship Officer",
+    long: "1 Years 5 Months",
+    target: 40000,
+    actual: 2409473.97,
+    image: "images\CHEAV Mengheng.jpg",
   },
   {
     id: 3,
-    name: "VANN Nyka",
-    branch: "Battambang Branch",
-    role: "Sales Executive",
-    long: "3 years",
-    target: 100000,
-    actual: 66700,
-    image: "/images/ka.jpg",
+    name: "HENG Leakhena",
+    branch: "Norodom Branch",
+    role: "Relationship Officer",
+    long: "1 year 5 months",
+    target: 320000,
+    actual: 2154911.47,
+    image: "images\HENG Leakena.jpg",
   },
   {
     id: 4,
-    name: "LEAP Danuch",
-    branch: "Kampong Cham Branch",
-    role: "Sales Representative",
-    long: "3 years",
-    target: 100000,
-    actual: 43200,
-    image: "/images/nuch.jpg",
+    name: "SOK Chet",
+    branch: "Chip Mong Tower Branch",
+    role: "Relationship Manager",
+    long: "4 Years 1 Months",
+    target: 960000,
+    actual: 2105000,
+    image: "images\SOK Chet.jpg",
   },
   {
     id: 5,
-    name: "MO Nyka",
-    branch: "Takeo Branch",
-    role: "Sales Representative",
-    long: "3 years",
-    target: 100000,
-    actual: 28600,
-    image: "/images/nyka.jpg",
+    name: "MOR Sophaktra",
+    branch: "Mao Tse Tong Branch",
+    role: "Relationship Officer",
+    long: "1 year",
+    target: 320000,
+    actual: 2049297.28,
+    image: "images\MOR Sophaktra.jpg",
+    
   },
   {
     id: 6,
-    name: "SOVANN Mony",
-    branch: "Takeo Branch",
-    role: "Sales Representative",
-    long: "3 years",
-    target: 100000,
-    actual: 28600,
-    image: "/images/nyny.jpg",
+    name: "THAVY Socheata",
+    branch: "Siem Reap Branch",
+    role: "Relationship Officer",
+    long: "1 year",
+    target: 280000,
+    actual: 1303909.75,
+    image: "images\THAVY Socheata.jpg",
+    
   },
   {
-    id: 5,
-    name: "DUL Piseth",
-    branch: "Takeo Branch",
-    role: "Sales Representative",
-    long: "3 years",
-    target: 100000,
-    actual: 28600,
-    image: "/images/pisey.jpg",
+    id: 7,
+    name: "SOL Shearm",
+    branch: "Sensok Mall Branch",
+    role: "Relationship Officer",
+    long: "1 year 9 months",
+    target: 320000,
+    actual: 1214871.83,
+    image: "images\SOL Shearm.jpg",
+    
   },
   {
-    id: 6,
-    name: "DARA Votey",
-    branch: "Takeo Branch",
-    role: "Sales Representative",
-    long: "3 years",
-    target: 100000,
-    actual: 28600,
-    image: "/images/tey.jpg",
+    id: 8,
+    name: "MOM Leakhena",
+    branch: "Mao Tse Tong Branch",
+    role: "Relationship Officer",
+    long: "1 year 6 months",
+    target: 320000,
+    actual: 1205927.8,
+    image: "images\MOM Leakena.jpg",
+    
+  },
+  {
+    id: 9,
+    name: "KEO Sambat Thida",
+    branch: "Mao Tse Tong Branch",
+    role: "Relationship Officer",
+    long: "1 year 10 months",
+    target: 320000,
+    actual: 1192125,
+    image: "images\KEO Sambat Thida.jpg",
+    
+  },
+  {
+    id: 10,
+    name: "KET Kakada",
+    branch: "Toul Kork Branch",
+    role: "Relationship Officer",
+    long: "1 year 9 months",
+    target: 320000,
+    actual: 1079490,
+    image: "images\KET Kakada.jpg",
+    
   },
 ];
 
@@ -149,7 +175,10 @@ function GaugeChart({ achievement }) {
 
   return (
     <div className="flex flex-col items-center justify-center">
-      <svg viewBox="0 0 260 170" className="h-40 w-64 max-w-full overflow-visible">
+      <svg
+        viewBox="0 0 260 170"
+        className="h-40 w-64 max-w-full overflow-visible"
+      >
         <path
           d="M 35 125 A 95 95 0 0 1 225 125"
           fill="none"
@@ -266,8 +295,18 @@ function SalesRow({ person }) {
       </div>
 
       <div className="text-center lg:text-left">
-        <h2 className="text-3xl font-extrabold text-slate-950">{person.name}</h2>
-        <p className="mt-3 text-lg font-semibold text-slate-500">{person.branch}</p>
+        <p className="mb-2 inline-flex rounded-full bg-blue-50 px-3 py-1 text-sm font-bold text-blue-700">
+          Worked: {person.long}
+        </p>
+
+        <h2 className="text-3xl font-extrabold text-slate-950">
+          {person.name}
+        </h2>
+
+        <p className="mt-3 text-lg font-semibold text-slate-500">
+          {person.branch}
+        </p>
+
         <p className="mt-1 text-base text-slate-500">{person.role}</p>
       </div>
 
@@ -304,7 +343,10 @@ function InputPanel({ people, setPeople }) {
         person.id === id
           ? {
               ...person,
-              [field]: field === "target" || field === "actual" ? Number(value) : value,
+              [field]:
+                field === "target" || field === "actual"
+                  ? Number(value)
+                  : value,
             }
           : person
       )
@@ -319,9 +361,12 @@ function InputPanel({ people, setPeople }) {
     <div className="rounded-3xl border border-slate-200 bg-white p-5 shadow-lg shadow-slate-200/70">
       <div className="mb-4 flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
         <div>
-          <h2 className="text-xl font-extrabold text-slate-950">Input Sales Data</h2>
+          <h2 className="text-xl font-extrabold text-slate-950">
+            Input Sales Data
+          </h2>
+
           <p className="text-sm text-slate-500">
-            Change profile image path, target, and actual sale here.
+            Change profile image path, worked long, target, and actual sale here.
           </p>
         </div>
 
@@ -337,15 +382,18 @@ function InputPanel({ people, setPeople }) {
         {people.map((person) => (
           <div
             key={person.id}
-            className="grid grid-cols-1 gap-3 rounded-2xl bg-slate-50 p-4 md:grid-cols-2 xl:grid-cols-[120px_1fr_1fr_1fr_1fr]"
+            className="grid grid-cols-1 gap-3 rounded-2xl bg-slate-50 p-4 md:grid-cols-2 xl:grid-cols-[120px_1fr_1fr_1fr_1fr_1fr]"
           >
             <div>
               <label className="mb-1 block text-xs font-bold text-slate-500">
                 Name
               </label>
+
               <input
                 value={person.name}
-                onChange={(event) => updatePerson(person.id, "name", event.target.value)}
+                onChange={(event) =>
+                  updatePerson(person.id, "name", event.target.value)
+                }
                 className="h-10 w-full rounded-xl border border-slate-200 px-3 text-sm outline-none focus:border-blue-500"
               />
             </div>
@@ -354,6 +402,7 @@ function InputPanel({ people, setPeople }) {
               <label className="mb-1 block text-xs font-bold text-slate-500">
                 Branch
               </label>
+
               <input
                 value={person.branch}
                 onChange={(event) =>
@@ -365,8 +414,23 @@ function InputPanel({ people, setPeople }) {
 
             <div>
               <label className="mb-1 block text-xs font-bold text-slate-500">
+                Worked Long
+              </label>
+
+              <input
+                value={person.long}
+                onChange={(event) =>
+                  updatePerson(person.id, "long", event.target.value)
+                }
+                className="h-10 w-full rounded-xl border border-slate-200 px-3 text-sm outline-none focus:border-blue-500"
+              />
+            </div>
+
+            <div>
+              <label className="mb-1 block text-xs font-bold text-slate-500">
                 Target Sale
               </label>
+
               <input
                 type="number"
                 value={person.target}
@@ -381,6 +445,7 @@ function InputPanel({ people, setPeople }) {
               <label className="mb-1 block text-xs font-bold text-slate-500">
                 Actual Sale
               </label>
+
               <input
                 type="number"
                 value={person.actual}
@@ -395,9 +460,12 @@ function InputPanel({ people, setPeople }) {
               <label className="mb-1 block text-xs font-bold text-slate-500">
                 Profile Image Path
               </label>
+
               <input
                 value={person.image}
-                onChange={(event) => updatePerson(person.id, "image", event.target.value)}
+                onChange={(event) =>
+                  updatePerson(person.id, "image", event.target.value)
+                }
                 className="h-10 w-full rounded-xl border border-slate-200 px-3 text-sm outline-none focus:border-blue-500"
               />
             </div>
@@ -426,6 +494,7 @@ function SummaryCards({ people }) {
     <div className="grid grid-cols-1 gap-4 md:grid-cols-4">
       <div className="rounded-3xl border border-slate-200 bg-white p-5 shadow-sm">
         <p className="text-sm font-bold text-slate-500">Total Target</p>
+
         <p className="mt-2 text-2xl font-extrabold text-slate-950">
           {money(totalTarget)}
         </p>
@@ -433,6 +502,7 @@ function SummaryCards({ people }) {
 
       <div className="rounded-3xl border border-slate-200 bg-white p-5 shadow-sm">
         <p className="text-sm font-bold text-slate-500">Total Actual</p>
+
         <p className="mt-2 text-2xl font-extrabold text-blue-700">
           {money(totalActual)}
         </p>
@@ -440,17 +510,15 @@ function SummaryCards({ people }) {
 
       <div className="rounded-3xl border border-slate-200 bg-white p-5 shadow-sm">
         <p className="text-sm font-bold text-slate-500">Achievement</p>
-        <p
-          className={`mt-2 text-2xl font-extrabold ${
-            getTheme(achievement).text
-          }`}
-        >
+
+        <p className={`mt-2 text-2xl font-extrabold ${getTheme(achievement).text}`}>
           {achievement.toFixed(1)}%
         </p>
       </div>
 
       <div className="rounded-3xl border border-slate-200 bg-white p-5 shadow-sm">
         <p className="text-sm font-bold text-slate-500">Sales Gap</p>
+
         <p
           className={`mt-2 text-2xl font-extrabold ${
             gap >= 0 ? "text-green-600" : "text-red-600"
@@ -470,7 +538,9 @@ export default function App() {
 
   const sortedPeople = useMemo(() => {
     return [...people].sort(
-      (a, b) => getAchievement(b.actual, b.target) - getAchievement(a.actual, a.target)
+      (a, b) =>
+        getAchievement(b.actual, b.target) -
+        getAchievement(a.actual, a.target)
     );
   }, [people]);
 
@@ -488,8 +558,8 @@ export default function App() {
             </h1>
 
             <p className="mt-3 text-lg text-slate-500">
-              Each row is one salesperson with profile, actual sale, target, and
-              gauge chart.
+              Each row is one salesperson with profile, worked long, actual sale,
+              target, and gauge chart.
             </p>
           </div>
 
