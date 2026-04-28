@@ -476,61 +476,61 @@ function InputPanel({ people, setPeople }) {
   );
 }
 
-function SummaryCards({ people }) {
-  const totalTarget = people.reduce(
-    (sum, person) => sum + Number(person.target || 0),
-    0
-  );
+// function SummaryCards({ people }) {
+//   const totalTarget = people.reduce(
+//     (sum, person) => sum + Number(person.target || 0),
+//     0
+//   );
 
-  const totalActual = people.reduce(
-    (sum, person) => sum + Number(person.actual || 0),
-    0
-  );
+//   const totalActual = people.reduce(
+//     (sum, person) => sum + Number(person.actual || 0),
+//     0
+//   );
 
-  const achievement = getAchievement(totalActual, totalTarget);
-  const gap = totalActual - totalTarget;
+//   const achievement = getAchievement(totalActual, totalTarget);
+//   const gap = totalActual - totalTarget;
 
-  return (
-    <div className="grid grid-cols-1 gap-4 md:grid-cols-4">
-      <div className="rounded-3xl border border-slate-200 bg-white p-5 shadow-sm">
-        <p className="text-sm font-bold text-slate-500">Total Target</p>
+//   return (
+//     <div className="grid grid-cols-1 gap-4 md:grid-cols-4">
+//       <div className="rounded-3xl border border-slate-200 bg-white p-5 shadow-sm">
+//         <p className="text-sm font-bold text-slate-500">Total Target</p>
 
-        <p className="mt-2 text-2xl font-extrabold text-slate-950">
-          {money(totalTarget)}
-        </p>
-      </div>
+//         <p className="mt-2 text-2xl font-extrabold text-slate-950">
+//           {money(totalTarget)}
+//         </p>
+//       </div>
 
-      <div className="rounded-3xl border border-slate-200 bg-white p-5 shadow-sm">
-        <p className="text-sm font-bold text-slate-500">Total Actual</p>
+//       <div className="rounded-3xl border border-slate-200 bg-white p-5 shadow-sm">
+//         <p className="text-sm font-bold text-slate-500">Total Actual</p>
 
-        <p className="mt-2 text-2xl font-extrabold text-blue-700">
-          {money(totalActual)}
-        </p>
-      </div>
+//         <p className="mt-2 text-2xl font-extrabold text-blue-700">
+//           {money(totalActual)}
+//         </p>
+//       </div>
 
-      <div className="rounded-3xl border border-slate-200 bg-white p-5 shadow-sm">
-        <p className="text-sm font-bold text-slate-500">Achievement</p>
+//       <div className="rounded-3xl border border-slate-200 bg-white p-5 shadow-sm">
+//         <p className="text-sm font-bold text-slate-500">Achievement</p>
 
-        <p className={`mt-2 text-2xl font-extrabold ${getTheme(achievement).text}`}>
-          {achievement.toFixed(1)}%
-        </p>
-      </div>
+//         <p className={`mt-2 text-2xl font-extrabold ${getTheme(achievement).text}`}>
+//           {achievement.toFixed(1)}%
+//         </p>
+//       </div>
 
-      <div className="rounded-3xl border border-slate-200 bg-white p-5 shadow-sm">
-        <p className="text-sm font-bold text-slate-500">Sales Gap</p>
+//       <div className="rounded-3xl border border-slate-200 bg-white p-5 shadow-sm">
+//         <p className="text-sm font-bold text-slate-500">Sales Gap</p>
 
-        <p
-          className={`mt-2 text-2xl font-extrabold ${
-            gap >= 0 ? "text-green-600" : "text-red-600"
-          }`}
-        >
-          {gap >= 0 ? "+" : ""}
-          {money(gap)}
-        </p>
-      </div>
-    </div>
-  );
-}
+//         <p
+//           className={`mt-2 text-2xl font-extrabold ${
+//             gap >= 0 ? "text-green-600" : "text-red-600"
+//           }`}
+//         >
+//           {gap >= 0 ? "+" : ""}
+//           {money(gap)}
+//         </p>
+//       </div>
+//     </div>
+//   );
+// }
 
 export default function App() {
   const [people, setPeople] = useState(initialSalespeople);
