@@ -573,7 +573,8 @@ export default function App() {
 
         {showInput && <InputPanel people={people} setPeople={setPeople} />}
 
-        <SummaryCards people={people} />
+
+        {/* <SummaryCards people={people} /> */}
 
         <div className="space-y-6">
           {sortedPeople.map((person) => (
